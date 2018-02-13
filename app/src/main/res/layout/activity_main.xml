@@ -2,49 +2,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:id="@+id/mainL"
     tools:context="com.example.tomer.switchandtoggle.MainActivity">
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
-        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/SecondL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:gravity="center"
-            android:textColor="#000000"
-            android:text="White" />
+            android:text="White"
+            android:textColor="#000000" />
 
         <Switch
             android:id="@+id/sw"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="2.2"
             android:textOff="&#8195;"
-            android:textOn="&#8195;"
-            android:layout_weight="2.2" />
+            android:textOn="&#8195;" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.7"
             android:gravity="center"
-            android:textColor="#000000"
-            android:text="Blue" />
+            android:text="Blue"
+            android:textColor="#000000" />
 
         <Space
             android:layout_width="0dp"
@@ -56,8 +77,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="#000000"
-            android:text="Green" />
+            android:text="Off - Lion"
+            android:textColor="#000000" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -75,7 +96,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
-                android:onClick="check_tb"
                 android:backgroundTint="#444444"
                 android:textOff="&#8195;"
                 android:textOn="&#8195;" />
@@ -91,35 +111,35 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="#000000"
-            android:text="Red" />
+            android:text="On - Eagle"
+            android:textColor="#000000" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:gravity="center"
         android:layout_weight="1.7"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.35" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textAllCaps="false"
-            android:onClick="check_Sw"
-            android:text="Press for color" />
+            android:onClick="check_status"
+            android:text="Press for changes"
+            android:textAllCaps="false" />
 
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
     </LinearLayout>
 
     <Space
