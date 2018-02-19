@@ -35,4 +35,4 @@ public class MainActivity extends AppCompatActivity {
         else
             SecondL.setBackgroundResource(R.drawable.lion);
         }
-    }
+}
